@@ -10,12 +10,18 @@
     <h1>Product List</h1>
     <div>
         @if(session()->has('success'))
-        <div>
-            {{session('successs')}}
-        </div>
+            <div>
+                {{session('successs')}}
+            </div>
         @endif
     </div>
     <div>
+        <div>
+            <a href="{{route('product.create')}}">Create</a>
+        </div>
+
+
+
         <table border="1">
             <tr>
                 <th>ID</th>
